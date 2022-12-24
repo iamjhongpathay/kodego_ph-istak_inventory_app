@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/itemListFragment">
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.kodego.app.istak_inventory.fragments.list.ItemListFragment"
+        android:label="Items"
+        tools:layout="@layout/fragment_item_list">
+        <action
+            android:id="@+id/action_itemListFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_updateItemFragment"
+            app:destination="@id/updateItemFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_viewItemFragment"
+            app:destination="@id/viewItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.kodego.app.istak_inventory.fragments.add.AddItemFragment"
+        android:label="Add Item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateItemFragment"
+        android:name="com.kodego.app.istak_inventory.fragments.update.UpdateItemFragment"
+        android:label="Update Item"
+        tools:layout="@layout/fragment_update_item" >
+        <action
+            android:id="@+id/action_updateItemFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <argument
+            android:name="currentItem"
+            app:argType="com.kodego.app.istak_inventory.db.Item" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewItemFragment"
+        android:name="com.kodego.app.istak_inventory.fragments.display.ViewItemFragment"
+        android:label=""
+        tools:layout="@layout/fragment_view_item" >
+        <action
+            android:id="@+id/action_viewItemFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <argument
+            android:name="currentItem"
+            app:argType="com.kodego.app.istak_inventory.db.Item" />
+    </fragment>
+</navigation>

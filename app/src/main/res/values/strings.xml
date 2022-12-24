@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Istak</string>
+    //TextView
+    <string name="tv_item_list">Items</string>
+    <string name="tv_add_item">Add Item</string>'
+    <string name="tv_item_name">Item Name</string>'
+    <string name="tv_item_stock">0</string>'
+    <string name="tv_view_description">Description of the Item</string>'
+    //TextView Label
+    <string name="tv_in_stock">in stock</string>'
+    <string name="tv_description">Description</string>'
+    <string name="tv_stock">Stock: </string>'
+    <string name="tv_inventory_is_empty">Click + to add new item.</string>'
+    //EditText
+    <string name="et_item_name">Item Name</string>'
+    <string name="et_item_stock">Stock</string>'
+    <string name="et_description">Description</string>'
+    //Button
+    <string name="btn_add_item">Add New Item</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">cancel</string>
+    <string name="btn_add_photo">Add Photo</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_update">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
